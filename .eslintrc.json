@@ -1,0 +1,11 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {"browser": true, "node": true},
+  "globals": {"document": false},
+  "rules": {
+    "global-require": "off",
+    "react/jsx-no-bind": "off",
+    "react/jsx-filename-extension": "off",
+    "quotes": ["warn", "single"]
+  }
+}

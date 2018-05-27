@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Editor extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Editor extends Component {
     const column = parseInt(e.target.name, 10);
     if (column + 1 === this.state.creditAry.length) {
       const newAry = this.state.creditAry.concat();
-      newAry.push("");
+      newAry.push('');
       this.setState({ creditAry: newAry });
     }
   }
@@ -31,10 +31,10 @@ class Editor extends Component {
       <input
         name={`${i}`}
         type="text"
-        value={this.state.creditAry[i] || ""}
+        value={this.state.creditAry[i] || ''}
         onChange={this.handleChange.bind(this)}
         onFocus={this.handleFocus.bind(this)}
-        key={`${i}`}
+        key={`${i.toString()}`}
       />
     ));
 
