@@ -1,6 +1,6 @@
 # CREDIT EDITOR
 
-Make it easy to type staff credits of videos.
+Make it easy for someone to type staff credits of videos.
 
 ## Installation
 
