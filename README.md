@@ -1,6 +1,6 @@
 # CREDIT EDITOR
 
-This app makes easy to type staff credits on TV show.
+Make easy to type staff credits of videos.
 
 ## Installation
 
