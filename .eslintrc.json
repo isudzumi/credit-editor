@@ -4,6 +4,7 @@
   "globals": {"document": false},
   "rules": {
     "global-require": "off",
+    "no-plusplus": "off",
     "react/jsx-no-bind": "off",
     "react/jsx-filename-extension": "off",
     "quotes": ["warn", "single"],
