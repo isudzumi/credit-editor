@@ -3,7 +3,7 @@ export const addInputList = id => ({
   id
 });
 
-export const addInputListRow = text => ({
-  type: 'ADD_INPUT_LIST_ROW',
-  text
+export const addRowList = id => ({
+  type: 'ADD_ROW_LIST',
+  id
 });

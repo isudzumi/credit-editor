@@ -1,11 +1,11 @@
 import React from 'react';
-import AddInputList from '../containers/AddInputList';
+import FilterInputList from '../containers/FilterInputList';
 
 const App = () => (
   <div>
     <header>クレジットエディター</header>
     <main>
-      <AddInputList />
+      <FilterInputList />
     </main>
   </div>
 );
