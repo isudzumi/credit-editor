@@ -49,6 +49,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint --fix src/",
+    "fmt": "prettier --write src/*/**",
     "deploy": "npm run build && gh-pages -d docs"
   },
   "jest": {
