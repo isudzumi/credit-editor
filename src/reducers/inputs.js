@@ -1,17 +1,16 @@
-const inputs = (state = [], action) => {
+import utils from './arrayUtils';
+
+const inputs = (state, action) => {
   switch (action.type) {
     case 'ADD_INPUT_LIST':
-      return state[state.length - 1].id === action.id
-        ? [
-            ...state,
-            {
-              id: action.id + 1
-            }
-          ]
-        : state;
+      return state.map(
+        (inputList, i) =>
+          i === action.row && inputList.length - 1 === action.col
+            ? utils.pushTextBox(inputList, { row: i, col: action.col + 1 })
+            : inputList
+      );
     default:
-      // default value
-      return [...new Array(2)].map((_, i) => ({ id: i }));
+      return utils.makeInitialValue();
   }
 };
 

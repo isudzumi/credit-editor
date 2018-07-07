@@ -5,7 +5,7 @@ import { addInputList } from '../actions';
 const mapStateToProps = state => ({ inputs: state.inputs });
 
 const mapDispatchToProps = dispatch => ({
-  addInputList: id => dispatch(addInputList(id))
+  addInputList: (row, col) => dispatch(addInputList(row, col))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(InputList);

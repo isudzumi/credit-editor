@@ -1,6 +1,7 @@
-export const addInputList = id => ({
+export const addInputList = (row, col) => ({
   type: 'ADD_INPUT_LIST',
-  id
+  row,
+  col
 });
 
 export const addRowList = id => ({
